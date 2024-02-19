@@ -1,33 +1,40 @@
-package service;
+package service.student;
 
 import model.Student;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
 public class StudentDAO implements IStudentDAO{
+    Connection connection = ;
     @Override
-    public void insertStudent(Student student) throws SQLException {
-
-    }
-
-    @Override
-    public Student getStudent(int studentId) {
+    public List<Student> getall() {
         return null;
     }
 
     @Override
-    public List<Student> getAllStudents() {
+    public Student findById(int id) {
         return null;
     }
 
     @Override
-    public boolean deleteStudent(int studentId) throws SQLException {
-        return false;
+    public void save(Student student) {
+
     }
 
     @Override
-    public boolean updateStudent(Student student) throws SQLException {
-        return false;
+    public void delete(Student student) {
+
+    }
+
+    @Override
+    public void update(Student student) {
+
+    }
+
+    @Override
+    public void saveTransaction(Student student, List<Integer> classes) {
+
     }
 }
